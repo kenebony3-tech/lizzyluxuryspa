@@ -10,33 +10,128 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as HomeServiceRouteImport } from './routes/home-service'
+import { Route as PackagesRouteImport } from './routes/packages'
+import { Route as TreatmentsRouteImport } from './routes/treatments'
+import { Route as VisitRouteImport } from './routes/visit'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HomeServiceRoute = HomeServiceRouteImport.update({
+  id: '/home-service',
+  path: '/home-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PackagesRoute = PackagesRouteImport.update({
+  id: '/packages',
+  path: '/packages',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TreatmentsRoute = TreatmentsRouteImport.update({
+  id: '/treatments',
+  path: '/treatments',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VisitRoute = VisitRouteImport.update({
+  id: '/visit',
+  path: '/visit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/home-service': typeof HomeServiceRoute
+  '/packages': typeof PackagesRoute
+  '/treatments': typeof TreatmentsRoute
+  '/visit': typeof VisitRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/home-service': typeof HomeServiceRoute
+  '/packages': typeof PackagesRoute
+  '/treatments': typeof TreatmentsRoute
+  '/visit': typeof VisitRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/home-service': typeof HomeServiceRoute
+  '/packages': typeof PackagesRoute
+  '/treatments': typeof TreatmentsRoute
+  '/visit': typeof VisitRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/gallery'
+    | '/home-service'
+    | '/packages'
+    | '/treatments'
+    | '/visit'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/gallery'
+    | '/home-service'
+    | '/packages'
+    | '/treatments'
+    | '/visit'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/gallery'
+    | '/home-service'
+    | '/packages'
+    | '/treatments'
+    | '/visit'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  GalleryRoute: typeof GalleryRoute
+  HomeServiceRoute: typeof HomeServiceRoute
+  PackagesRoute: typeof PackagesRoute
+  TreatmentsRoute: typeof TreatmentsRoute
+  VisitRoute: typeof VisitRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +143,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/home-service': {
+      id: '/home-service'
+      path: '/home-service'
+      fullPath: '/home-service'
+      preLoaderRoute: typeof HomeServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/packages': {
+      id: '/packages'
+      path: '/packages'
+      fullPath: '/packages'
+      preLoaderRoute: typeof PackagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/treatments': {
+      id: '/treatments'
+      path: '/treatments'
+      fullPath: '/treatments'
+      preLoaderRoute: typeof TreatmentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/visit': {
+      id: '/visit'
+      path: '/visit'
+      fullPath: '/visit'
+      preLoaderRoute: typeof VisitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  GalleryRoute: GalleryRoute,
+  HomeServiceRoute: HomeServiceRoute,
+  PackagesRoute: PackagesRoute,
+  TreatmentsRoute: TreatmentsRoute,
+  VisitRoute: VisitRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
