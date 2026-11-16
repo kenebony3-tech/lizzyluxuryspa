@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { images } from "@/config/site";
+import { images, site } from "@/config/site";
 import { PageHero, Reveal, SectionHeading } from "@/components/site/ui";
 import { FinalCta, SafetyAccordion, Therapists, WhyUs } from "@/components/site/sections";
 

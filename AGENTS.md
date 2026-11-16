@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- All business content (prices, services, contact, hours) lives in `src/config/site.ts`; pages read from it so the owner edits one file.
+- Booking links are built only via `buildWhatsAppLink` in `src/lib/whatsapp.ts` so message format stays consistent.
