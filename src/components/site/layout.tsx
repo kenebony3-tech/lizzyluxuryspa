@@ -10,7 +10,7 @@ export function Logo() {
   return (
     <Link to="/" className="flex min-w-0 flex-col leading-none">
       <span className="truncate font-serif text-2xl">{site.BUSINESS_NAME}</span>
-      <span className="mt-1 text-[0.6rem] tracking-[0.3em] text-muted-foreground uppercase">Spa · Home & Orchard Rd</span>
+      <span className="mt-1 text-[0.6rem] tracking-[0.3em] text-muted-foreground uppercase">Spa · Home & Badore</span>
     </Link>
   );
 }
