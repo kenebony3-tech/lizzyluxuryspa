@@ -13,32 +13,30 @@ import therapistImg from "@/assets/therapist-1.jpg";
 export const images = { hero: heroImg, interior: interiorImg, facial: facialImg, products: productsImg, manicure: manicureImg, massage: massageImg, therapist: therapistImg };
 
 export const site = {
-  BUSINESS_NAME: "[Spa Name]",
-  TAGLINE: "[Luxury spa care, delivered to your door]",
-  WHATSAPP_NUMBER: "2340000000000", // international format, no +
-  PHONE: "+234 000 000 0000",
-  EMAIL: "hello@spaname.com",
-  INSTAGRAM: "https://instagram.com/",
-  TIKTOK: "https://tiktok.com/",
-  FACEBOOK: "https://facebook.com/",
-  STORE_ADDRESS: "[Shop address], Orchard Road, Lagos",
-  STORE_LANDMARK: "[Landmark / parking note — e.g. opposite the plaza, free parking in front]",
+  BUSINESS_NAME: "Lizzy Luxury Spa",
+  TAGLINE: "Five-star wellness delivered to your door",
+  WHATSAPP_NUMBER: "2348058513551", // international format, no +
+  PHONE: "+234 805 851 3551",
+  EMAIL: "lizygold@gmail.com",
+  INSTAGRAM: "https://instagram.com/lizzygold",
+  TIKTOK: "https://tiktok.com/@lizzygold",
+  FACEBOOK: "https://facebook.com/lizzygold",
+  STORE_ADDRESS: "No 06 Unity Estate, Badore, Ajah, Lagos",
+  STORE_LANDMARK: "Inside Unity Estate, Badore — message us on WhatsApp for directions",
   STORE_HOURS: [
-    { days: "Mon – Fri", hours: "9:00am – 8:00pm" },
-    { days: "Saturday", hours: "9:00am – 9:00pm" },
-    { days: "Sunday", hours: "12:00pm – 7:00pm" },
+    { days: "Mon – Sun", hours: "8:00am – 9:00pm" },
   ],
-  HOME_SERVICE_HOURS: "Daily, 7:00am – 10:00pm",
+  HOME_SERVICE_HOURS: "Daily, 8:00am – 9:00pm",
   HOME_VISIT_FEE: 5000,
-  ANNOUNCEMENT: "Free rescheduling · Book via WhatsApp 7am–10pm",
+  ANNOUNCEMENT: "Free rescheduling · Book via WhatsApp 8am–9pm",
   RATING: "4.9",
   RATING_COUNT: "200+ happy clients",
-  MAP_EMBED: "https://www.google.com/maps?q=Orchard+Road+Lagos&output=embed",
-  MAP_DIRECTIONS: "https://www.google.com/maps/dir/?api=1&destination=Orchard+Road+Lagos",
+  MAP_EMBED: "https://www.google.com/maps?q=Unity+Estate+Badore+Ajah+Lagos&output=embed",
+  MAP_DIRECTIONS: "https://www.google.com/maps/dir/?api=1&destination=Unity+Estate+Badore+Ajah+Lagos",
   SITE_URL: "https://example.com",
 };
 
-export const serviceAreas = ["Lekki Phase 1", "Ikoyi", "Victoria Island", "Ajah", "Ikeja GRA", "Banana Island", "Oniru", "Chevron", "Yaba", "Surulere", "Magodo", "Gbagada"];
+export const serviceAreas = ["Badore", "Ajah", "Sangotedo", "Abraham Adesanya", "Lekki Phase 1", "Ikoyi", "Victoria Island", "Ikeja GRA", "Banana Island", "Oniru", "Chevron", "Yaba", "Surulere", "Magodo", "Gbagada"];
 
 export type Category = "Massage" | "Facials" | "Body" | "Hands & Feet" | "Couples";
 export const categories: Category[] = ["Massage", "Facials", "Body", "Hands & Feet", "Couples"];
@@ -114,7 +112,7 @@ export const gallery: GalleryItem[] = [
   { id: "g2", type: "image", src: massageImg, alt: "Hot stone massage", category: "Massage" },
   { id: "g3", type: "image", src: facialImg, alt: "Glow facial in progress", category: "Facials" },
   { id: "g4", type: "image", src: manicureImg, alt: "Nude manicure finish", category: "Nails" },
-  { id: "g5", type: "image", src: interiorImg, alt: "Treatment room at our Orchard Road spa", category: "Spa" },
+  { id: "g5", type: "image", src: interiorImg, alt: "Treatment room at our Badore spa", category: "Spa" },
   { id: "g6", type: "image", src: productsImg, alt: "Our premium oils and scrubs", category: "Spa" },
   // Video slot: replace src with your .mp4 URL and poster with a still image
   { id: "g7", type: "video", src: "https://cdn.coverr.co/videos/coverr-a-woman-getting-a-massage-1579/1080p.mp4", poster: massageImg, alt: "[Video placeholder] Massage session", category: "Massage" },

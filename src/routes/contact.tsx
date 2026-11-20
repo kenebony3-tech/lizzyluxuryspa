@@ -9,9 +9,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: `Contact Us · ${site.BUSINESS_NAME}` },
-      { name: "description", content: "WhatsApp, call or email us. Find our Orchard Road spa address and opening hours." },
+      { name: "description", content: "WhatsApp, call or email us. Find our Badore spa address and opening hours." },
       { property: "og:title", content: `Contact Us · ${site.BUSINESS_NAME}` },
-      { property: "og:description", content: "WhatsApp, call or email us. Find our Orchard Road spa address and opening hours." },
+      { property: "og:description", content: "WhatsApp, call or email us. Find our Badore spa address and opening hours." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

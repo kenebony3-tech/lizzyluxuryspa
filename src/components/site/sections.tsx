@@ -138,7 +138,7 @@ export function VisitSpa({ image }: { image: string }) {
       <div className="container-lux grid items-center gap-10 md:grid-cols-2">
         <Reveal>
           <p className="eyebrow mb-4">Visit our spa</p>
-          <h2 className="text-4xl md:text-6xl">Our sanctuary on <em>Orchard Road</em></h2>
+          <h2 className="text-4xl md:text-6xl">Our sanctuary on <em>Badore</em></h2>
           <p className="mt-5 flex gap-2 text-muted-foreground"><MapPin className="mt-1 h-4 w-4 shrink-0 text-gold" />{site.STORE_ADDRESS}</p>
           <ul className="mt-6 space-y-2 border-t border-border pt-6 text-sm">
             {site.STORE_HOURS.map((h) => <li key={h.days} className="flex justify-between gap-4"><span className="flex items-center gap-2"><Clock className="h-4 w-4 text-gold" />{h.days}</span><span>{h.hours}</span></li>)}
@@ -149,8 +149,8 @@ export function VisitSpa({ image }: { image: string }) {
           </div>
         </Reveal>
         <Reveal delay={150} className="grid gap-4">
-          <img src={image} alt="Treatment room at our Orchard Road spa" loading="lazy" width={1280} height={960} className="aspect-[16/10] w-full rounded-3xl object-cover" />
-          <iframe title="Map to our Orchard Road spa" src={site.MAP_EMBED} loading="lazy" className="h-56 w-full rounded-3xl border-0 grayscale-[40%]" />
+          <img src={image} alt="Treatment room at our Badore spa" loading="lazy" width={1280} height={960} className="aspect-[16/10] w-full rounded-3xl object-cover" />
+          <iframe title="Map to our Badore spa" src={site.MAP_EMBED} loading="lazy" className="h-56 w-full rounded-3xl border-0 grayscale-[40%]" />
         </Reveal>
       </div>
     </section>

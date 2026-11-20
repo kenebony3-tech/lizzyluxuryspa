@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: `${site.BUSINESS_NAME} — Luxury spa treatments at home in Lagos` },
-      { name: "description", content: "Massages, facials and nails delivered to your door across Lagos, or visit our Orchard Road spa. Transparent prices, book on WhatsApp." },
+      { name: "description", content: "Massages, facials and nails delivered to your door across Lagos, or visit our Badore spa. Transparent prices, book on WhatsApp." },
       { property: "og:title", content: `${site.BUSINESS_NAME} — Luxury spa at home in Lagos` },
       { property: "og:description", content: "Vetted therapists bring the full spa experience to you. Book on WhatsApp in minutes." },
       { property: "og:type", content: "website" },
@@ -30,7 +30,7 @@ function Index() {
       <section className="container-lux grid items-center gap-10 pt-8 pb-16 md:grid-cols-[1.1fr_1fr] md:gap-16 md:pt-14 md:pb-24">
         <Reveal>
           <h1 className="text-[2.9rem] leading-[0.98] sm:text-6xl lg:text-[5.5rem]">Book a spa treatment at home <em className="text-gold-foreground/80">in minutes</em></h1>
-          <p className="mt-6 max-w-md text-lg text-muted-foreground">{site.TAGLINE.replace(/[[\]]/g, "")}. Or step into our calm sanctuary on Orchard Road.</p>
+          <p className="mt-6 max-w-md text-lg text-muted-foreground">{site.TAGLINE.replace(/[[\]]/g, "")}. Or step into our calm sanctuary on Badore.</p>
           <ul className="mt-7 space-y-2.5">
             {["Qualified & vetted therapists", "Book instantly on WhatsApp", "Free rescheduling"].map((t) => (
               <li key={t} className="flex items-center gap-3"><span className="grid h-6 w-6 place-items-center rounded-full bg-accent"><Check className="h-3.5 w-3.5" /></span>{t}</li>
@@ -67,7 +67,7 @@ function Index() {
           <div className="grid gap-6 md:grid-cols-2">
             {[
               { icon: Home, title: "At Home", desc: "We arrive with everything. You don't lift a finger.", img: images.hero, loc: "home" as const, popular: true, link: "/home-service" as const },
-              { icon: Building2, title: "At Our Spa, Orchard Road", desc: "A quiet, candle-lit retreat in the heart of the city.", img: images.interior, loc: "spa" as const, link: "/visit" as const },
+              { icon: Building2, title: "At Our Spa, Badore", desc: "A quiet, candle-lit retreat in the heart of the city.", img: images.interior, loc: "spa" as const, link: "/visit" as const },
             ].map((c, i) => (
               <Reveal key={c.title} delay={i * 120}>
                 <article className="card-lift img-zoom relative overflow-hidden rounded-[2rem] border border-border bg-card">

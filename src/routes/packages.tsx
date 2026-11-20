@@ -8,9 +8,9 @@ export const Route = createFileRoute("/packages")({
   head: () => ({
     meta: [
       { title: `Spa Packages · ${site.BUSINESS_NAME}` },
-      { name: "description", content: "Relax, Rejuvenate, Royal Escape and bridal or group packages — at home in Lagos or at our Orchard Road spa." },
+      { name: "description", content: "Relax, Rejuvenate, Royal Escape and bridal or group packages — at home in Lagos or at our Badore spa." },
       { property: "og:title", content: `Spa Packages · ${site.BUSINESS_NAME}` },
-      { property: "og:description", content: "Relax, Rejuvenate, Royal Escape and bridal or group packages — at home in Lagos or at our Orchard Road spa." },
+      { property: "og:description", content: "Relax, Rejuvenate, Royal Escape and bridal or group packages — at home in Lagos or at our Badore spa." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

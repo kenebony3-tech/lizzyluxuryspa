@@ -9,9 +9,9 @@ export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       { title: `Gallery — Our Work · ${site.BUSINESS_NAME}` },
-      { name: "description", content: "Photos and videos of our massages, facials, nails, home visits and Orchard Road spa." },
+      { name: "description", content: "Photos and videos of our massages, facials, nails, home visits and Badore spa." },
       { property: "og:title", content: `Gallery — Our Work · ${site.BUSINESS_NAME}` },
-      { property: "og:description", content: "Photos and videos of our massages, facials, nails, home visits and Orchard Road spa." },
+      { property: "og:description", content: "Photos and videos of our massages, facials, nails, home visits and Badore spa." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

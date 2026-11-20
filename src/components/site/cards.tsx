@@ -42,7 +42,7 @@ export function TreatmentDetail({ t, at }: { t: Treatment; at: "home" | "spa" })
         </div>
         <div className="mt-6 flex flex-wrap items-end justify-between gap-4">
           <div><p className="font-serif text-4xl">{formatNaira(price)}</p>
-            <p className="text-xs text-muted-foreground">{at === "home" ? `Includes ${formatNaira(site.HOME_VISIT_FEE)} home-visit fee` : "At our Orchard Road spa"}</p></div>
+            <p className="text-xs text-muted-foreground">{at === "home" ? `Includes ${formatNaira(site.HOME_VISIT_FEE)} home-visit fee` : "At our Badore spa"}</p></div>
           <BookButton direct service={`${t.name} (${opt.minutes} mins)`} location={at}>Book this treatment</BookButton>
         </div>
       </div>
